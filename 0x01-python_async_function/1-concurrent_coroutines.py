@@ -2,14 +2,15 @@
 
 """ Async Programming """
 
+
 import asyncio
 from typing import List
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Spawns wait_random n times with the specified max_delay and
-    returns the list of delays in ascending order.
+    Spawns wait_random n times with the specified max_delay
+    and returns the list of delays in ascending order.
 
     Parameters:
         n (int): Number of times to spawn wait_random.
@@ -26,3 +27,4 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
         completed_tasks.append(await task)
 
     return completed_tasks
+
