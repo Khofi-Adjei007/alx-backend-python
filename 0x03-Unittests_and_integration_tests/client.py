@@ -12,6 +12,7 @@ from utils import (
     memoize,
 )
 
+
 class GithubOrgClient:
     """Client for interacting with GitHub organizations."""
     ORG_URL = "https://api.github.com/orgs/{org}"
@@ -27,7 +28,6 @@ class GithubOrgClient:
 
     @property
     def _public_repos_url(self) -> str:
-        
         """Get the URL for the public repositories
         of the organization."""
 

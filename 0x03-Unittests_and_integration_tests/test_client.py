@@ -17,7 +17,9 @@ from client import (
 )
 from fixtures import TEST_PAYLOAD
 
+
 class TestGithubOrgClient(unittest.TestCase):
+
     """Unit tests for the `GithubOrgClient` class."""
 
     @parameterized.expand([
@@ -115,6 +117,7 @@ class TestGithubOrgClient(unittest.TestCase):
         gh_org_client = GithubOrgClient("google")
         client_has_license = gh_org_client.has_license(repo, key)
         self.assertEqual(client_has_license, expected)
+
 
 @parameterized_class([
     {
